@@ -32,7 +32,7 @@ exports.crear = json => conexion => {
             `${conexion.escape(nombre)}, ` +
             `${conexion.escape(apellidoPaterno)},` +
             `${conexion.escape(apellidoMaterno)},` +
-            `${conexion.escape(sexoId)},` +
+            `${sexoId},` +
             `${conexion.escape(carreraId)},` +
             `${conexion.escape(tecnologicoId)}` +
             `)`
@@ -56,14 +56,14 @@ exports.modificar = json => conexion => {
             `SET ` +
             `AlumnoId=${conexion.escape(alumnoId)}, ` +
             `AlumnoNombre=${conexion.escape(nombre)}, ` +
-            `AlumnoApellidoPaterno=${conexion.escape(apellidoPaterno)},` +
-            `AlumnoApellidoMaterno=${conexion.escape(apellidoMaterno)},` +
-            `AlumnoSexoId=${conexion.escape(sexoId)},` +
-            `AlumnoCarreraId=${conexion.escape(carreraId)},` +
+            `AlumnoApellidoPaterno=${conexion.escape(apellidoPaterno)}, ` +
+            `AlumnoApellidoMaterno=${conexion.escape(apellidoMaterno)}, ` +
+            `AlumnoSexoId=${sexoId}, ` +
+            `AlumnoCarreraId=${conexion.escape(carreraId)}, ` +
             `AlumnoTecnologicoId=${conexion.escape(tecnologicoId)} ` +
             `WHERE AlumnoId=${conexion.escape(alumnoId)}`
     ).then(_ => {
-        return alumnoClave
+        return alumnoId
     })
 }
 

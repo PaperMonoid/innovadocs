@@ -41,8 +41,8 @@ exports.crear = json => conexion => {
             `${conexion.escape(equipoId)}, ` +
             `${conexion.escape(categoriaId)}` +
             `)`
-    ).then(_ => {
-        return proyectoClave
+    ).then(resultado => {
+        return resultado.lastInserted
     })
 }
 
@@ -62,30 +62,19 @@ exports.modificar = json => conexion => {
     return conexion.query(
         `UPDATE Proyecto ` +
             `SET ` +
-            `proyectoId`
-            `ProyectoNombre, ` +
-            `ProyectoFecha, ` +
-            `ProyectoDescripcion, ` +
-            `ProyectoDescripcionLarga, ` +
-            `ProyectoImagen, ` +
-            `ProyectoVistas, ` +
-            `ProyectoInteres, ` +
-            `ProyectoEquipoId, ` +
-            `ProyectoCategoriaId` +
-            `) ` +
-            `VALUES(` +
-            `${conexion.escape(nombre)}, ` +
-            `NOW(), ` +
-            `${conexion.escape(descripcion)}, ` +
-            `${conexion.escape(descripcionLarga)}, ` +
-            `${conexion.escape(imagen)}, ` +
-            `${conexion.escape(vistas)}, ` +
-            `${conexion.escape(interes)}, ` +
-            `${conexion.escape(equipoId)}, ` +
-            `${conexion.escape(categoriaId)}` +
+            `ProyectoId=${conexion.escape(proyectoId)}, ` +
+            `ProyectoNombre=${conexion.escape(nombre)}, ` +
+            `ProyectoFecha=NOW(), ` +
+            `ProyectoDescripcion=${conexion.escape(descripcion)}, ` +
+            `ProyectoDescripcionLarga=${conexion.escape(descripcionLarga)}, ` +
+            `ProyectoImagen=${conexion.escape(imagen)}, ` +
+            `ProyectoVistas=${conexion.escape(vistas)}, ` +
+            `ProyectoInteres=${conexion.escape(interes)}, ` +
+            `ProyectoEquipoId=${conexion.escape(equipoId)}, ` +
+            `ProyectoCategoriaId=${conexion.escape(categoriaId)} ` +
             `WHERE ProyectoId=${conexion.escape(proyectoId)}`
     ).then(_ => {
-        return proyectoClave
+        return proyectoId
     })
 }
 
