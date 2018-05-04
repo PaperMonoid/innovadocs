@@ -34,11 +34,8 @@ const obj = keys
           {'table': xss[1][0], 'id': xss[1][1]}
       ]);
 
-
-
 const query = json =>
       `ALTER TABLE ${json[0].table} ADD FOREIGN KEY(${json[0].id}) REFERENCES ${json[1].table}(${json[1].id})`;
-
 
 //const con = connect();
 
