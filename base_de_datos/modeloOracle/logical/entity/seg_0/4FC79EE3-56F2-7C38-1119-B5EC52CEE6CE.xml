@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4FC79EE3-56F2-7C38-1119-B5EC52CEE6CE" name="Carrera">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>5BD4754F-64A5-E5A5-D8F3-4418C7D1B9ED</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CarreraId" id="32405192-BCA2-95BC-554B-14242746F8DB">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>6E6F6EC7-D76B-B8BD-80E1-126969100EE8</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+</Attribute>
+<Attribute name="CarreraNombreAbreviado" id="F5B1A594-53FA-CADE-D28E-AD0B8C5D8D2E">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>38B87733-4994-27C4-EAB7-0D6A0122F796</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>22BA2D9E-F077-CFAF-B647-3B59E6600297</domain>
+<defaultValue>NULL</defaultValue>
+</Attribute>
+<Attribute name="CarreraNombreCompleto" id="A80B1984-D138-A2E6-9BA1-3DC88A482C2F">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>0813B580-B024-213F-E5AF-A7A9C44869FA</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="86F51DAD-B58C-0B66-5ECA-7A20373D19D2" name="Carrera PK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>CE23C3E1-84E1-AD19-0EB5-9A6CF684A7B1</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>32405192-BCA2-95BC-554B-14242746F8DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D3BAAF53-FBEB-5358-4A57-FF5083D06D0C" name="Asesor">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>8176045A-1E23-FEF7-B863-EC0867E873E7</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AsesorId" id="F1C7A085-973F-02C5-EDB2-A07B15926D16">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>9D8E98F2-D59C-AA40-75A5-D6C49F75E3F0</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="AsesorTitulo" id="39009127-5B93-C0CA-3B5B-4EBE0E8F0B22">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>35B4DA70-50D6-728D-1644-A3D58534AAD3</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+</Attribute>
+<Attribute name="AsesorNombre" id="CABBB1C4-D712-9B0A-A420-E4E21B666795">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>CB8939B1-55CF-E9B3-469D-6C1C839558C8</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A58C705C-54B9-99AD-018A-9ACCEB393C8A</domain>
+<defaultValue>NULL</defaultValue>
+</Attribute>
+<Attribute name="AsesorApellidoPaterno" id="A9DC68FA-DB04-B18A-C836-AEF67E840003">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>2F4ABEFF-B33F-C840-8B17-271FF4B2815D</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>22BA2D9E-F077-CFAF-B647-3B59E6600297</domain>
+<defaultValue>NULL</defaultValue>
+</Attribute>
+<Attribute name="AsesorApellidoMaterno" id="DEDCB66C-FCFD-65D3-60BA-E215B97C7116">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>F4E4CBA5-ABEB-3150-AF86-DC5F39CD35CF</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>22BA2D9E-F077-CFAF-B647-3B59E6600297</domain>
+<defaultValue>NULL</defaultValue>
+</Attribute>
+<Attribute name="AsesorGeneroId" id="80725687-06B5-B529-C6B8-891FE5CA6E82">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>45EF97ED-98EE-4C70-8F8F-38C7DB388C4B</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<referedAttribute>9CF9BD04-BE36-934E-A51F-F9DC89DBE81D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6738E076-3859-94EC-5F23-BE57DB1C31A3</domain>
+</Attribute>
+<Attribute name="AsesorTelefono" id="A6B0E728-C5E3-FC9C-635F-527EFB45C649">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>C7873866-17A5-2B15-2F51-A9A1825A5F98</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>BC84F54F-C16F-F89F-5A7D-9F069BDFE2B6</domain>
+<defaultValue>NULL</defaultValue>
+</Attribute>
+<Attribute name="AsesorCorreoElectronico" id="EDA8957A-61E8-2A83-64E2-53C7ACE31D16">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>2E3BA94A-957E-3821-AD23-643185846B2C</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A58C705C-54B9-99AD-018A-9ACCEB393C8A</domain>
+<defaultValue>NULL</defaultValue>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1D16D028-885A-239F-E029-934D137BE6C4" name="Asesor PK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>BABD9C3E-B9C6-E5BC-77B6-38D7FB87385A</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F1C7A085-973F-02C5-EDB2-A07B15926D16</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

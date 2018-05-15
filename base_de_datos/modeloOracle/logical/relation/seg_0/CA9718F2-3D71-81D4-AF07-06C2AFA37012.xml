@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Miembro_Rol_FK" directorySegmentName="seg_0" id="CA9718F2-3D71-81D4-AF07-06C2AFA37012">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>B6457E45-9A91-ABD1-6456-E5B036DB73F7</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<sourcePk>E4887601-E857-45C5-040B-6E10965A83A0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F33DF680-644F-D626-848D-565BE80754D9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3C983B76-4B09-8631-5D1C-0AF6B760A835</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

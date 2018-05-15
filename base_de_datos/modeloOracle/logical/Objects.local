@@ -1,2 +1,32 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.logical.LogicalDesign/>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="91B7D9BB-6BC1-5E72-777C-876489D96EE3" name="Acceso" seqName="seg_0"/>
+   <object objectType="Entity" objectID="067572BE-816C-23EB-722B-0FBC4BF9A884" name="Alumno" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D3BAAF53-FBEB-5358-4A57-FF5083D06D0C" name="Asesor" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4FC79EE3-56F2-7C38-1119-B5EC52CEE6CE" name="Carrera" seqName="seg_0"/>
+   <object objectType="Entity" objectID="AA2FD053-5D80-F52E-AEA3-201F123B73A2" name="Categoria" seqName="seg_0"/>
+   <object objectType="Entity" objectID="2CEF3B8D-1D4D-22FA-3B40-041DC9FD28DB" name="Equipo" seqName="seg_0"/>
+   <object objectType="Entity" objectID="607759AD-182A-D6AE-5A33-AD35D0F4938C" name="Estado" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4BBFDEC1-9656-4508-5BE2-9F329AE319FF" name="Genero" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3C983B76-4B09-8631-5D1C-0AF6B760A835" name="Miembro" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D05BD2BC-651D-8494-44BB-DA9B27178C33" name="Municipio" seqName="seg_0"/>
+   <object objectType="Entity" objectID="C6F728C2-EDD4-DCA4-885D-D2D024586CE0" name="Privilegio" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B0FB1FB8-4C53-4518-B4FA-A3922103197B" name="Proyecto" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F33DF680-644F-D626-848D-565BE80754D9" name="Rol" seqName="seg_0"/>
+   <object objectType="Entity" objectID="46656023-8BAE-3300-AE9E-99F3DAAB689A" name="Tecnologico" seqName="seg_0"/>
+   <object objectType="Entity" objectID="FC6EEFEE-E463-11C7-1FB1-4C27181A2BFB" name="Usuario" seqName="seg_0"/>
+   <object objectType="Relation" objectID="88F09CD2-3289-C1EC-4CA9-7D13C745C812" name="Acceso_Privilegio_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="95544EFA-4B71-0619-BE02-26F49774F8B5" name="Acceso_Usuario_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C209D802-AFD5-1F8C-DB75-3945238AC9FC" name="Alumno_Carrera_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="FF8728D3-C659-6396-7D5E-D2C734CCE1E7" name="Alumno_Genero_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C48815B1-A67F-F9AD-5039-A2670A89BDA0" name="Alumno_Tecnologico_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="45EF97ED-98EE-4C70-8F8F-38C7DB388C4B" name="Asesor_Genero_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F3FD171D-63C9-ABAD-ACCF-65A372C762B3" name="Equipo_Asesor_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="94ED7081-7643-7900-A466-8C6E963EEA01" name="Miembro_Alumno_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="13677EAC-294E-06D1-C921-01BF92623650" name="Miembro_Equipo_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="CA9718F2-3D71-81D4-AF07-06C2AFA37012" name="Miembro_Rol_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2599C253-BB69-65D6-5BF8-231A64A3FC43" name="Municipio_Estado_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B08F865C-77DC-9F66-C54B-91C4AFE697CA" name="Proyecto_Categoria_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4309FE2A-1CF8-1420-153B-D33051B76A30" name="Proyecto_Equipo_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="095930A4-2944-BDC1-A392-8ECF26B3414E" name="Tecnologico_Municipio_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

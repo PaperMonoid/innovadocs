@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tecnologico_Municipio_FK" directorySegmentName="seg_0" id="095930A4-2944-BDC1-A392-8ECF26B3414E">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>F55C0032-8B2F-309E-67D4-7F024A64AB48</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<sourcePk>6A774C00-8397-C813-E10C-8150639C8041</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D05BD2BC-651D-8494-44BB-DA9B27178C33</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>46656023-8BAE-3300-AE9E-99F3DAAB689A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

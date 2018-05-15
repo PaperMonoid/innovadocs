@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Alumno_Genero_FK" directorySegmentName="seg_0" id="FF8728D3-C659-6396-7D5E-D2C734CCE1E7">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>E3FF82AE-2786-AB4F-C729-8E232918F766</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<sourcePk>8FD52EE1-92EE-6255-137C-3352AB69D110</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4BBFDEC1-9656-4508-5BE2-9F329AE319FF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>067572BE-816C-23EB-722B-0FBC4BF9A884</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

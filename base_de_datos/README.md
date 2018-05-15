@@ -29,6 +29,9 @@ Es una base de datos relacional de MySQL que alamacena información relevante a 
 ## Diagrama entidad relación
 ![Diagrama entidad relacion](diagramas/innovadocs-pata-de-gallo.png)
 
+## Diagrama entidad relación(OracleDDM)
+![Diagrama entidad relacion](diagramas/innovadocs-pata-de-gallo(OracleDDM.png)
+
 ### Vistas de la base de datos
 #### Administrador
 ![Vista de administrador](diagramas/vistas/admin.png)
@@ -44,6 +47,22 @@ Es una base de datos relacional de MySQL que alamacena información relevante a 
 ![Vista de proyecto a detalle](diagramas/vistas/proyecto_detalle.png)
 #### Tecnológico
 ![Vista de tecnológico](diagramas/vistas/tecnologico.png)
+
+### Vistas de la base de datos(OracleDDM)
+#### Administrador(OracleDDM)
+![Vista de administrador](diagramas/vistas/admin(ODDM).png)
+#### Alumno(OracleDDM)
+![Vista de alumno](diagramas/vistas/alumno(ODDM).png)
+#### Asesor(OracleDDM)
+![Vista de asesor](diagramas/vistas/asesor(ODDM).png)
+#### Equipo(OracleDDM)
+![Vista de asesor](diagramas/vistas/equipo(ODDM).png)
+#### Proyecto(OracleDDM)
+![Vista de proyecto](diagramas/vistas/proyecto(ODDM).png)
+#### Proyecto a detalle(OracleDDM)
+![Vista de proyecto a detalle](diagramas/vistas/proyecto_detalle(ODDM).png)
+#### Tecnológico(OracleDDM)
+![Vista de tecnológico](diagramas/vistas/tecnologico(ODDM).png)
 
 ## Tipos de datos utilizados de MySQL
 Tipo de dato | Sinonimo | Bytes | Con signo | Sin signo 

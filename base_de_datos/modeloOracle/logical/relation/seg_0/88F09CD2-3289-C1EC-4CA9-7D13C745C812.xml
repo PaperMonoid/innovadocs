@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Acceso_Privilegio_FK" directorySegmentName="seg_0" id="88F09CD2-3289-C1EC-4CA9-7D13C745C812">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>1911F7E1-7F35-5B66-4164-1CD336936FB4</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<sourcePk>4AF188F8-0DD1-2CD9-0376-BB9C53FC6C8A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C6F728C2-EDD4-DCA4-885D-D2D024586CE0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>91B7D9BB-6BC1-5E72-777C-876489D96EE3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

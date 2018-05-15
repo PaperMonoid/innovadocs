@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Equipo_Asesor_FK" directorySegmentName="seg_0" id="F3FD171D-63C9-ABAD-ACCF-65A372C762B3">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:41:55 UTC</createdTime>
+<generatorID>256308BA-2875-C70D-F3F5-9342FF4FDD43</generatorID>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<engineerTo>
+<item key="814C32E2-7DC7-6173-BB56-0970E0362B85" value="true"/>
+</engineerTo>
+<sourcePk>1D16D028-885A-239F-E029-934D137BE6C4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D3BAAF53-FBEB-5358-4A57-FF5083D06D0C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2CEF3B8D-1D4D-22FA-3B40-041DC9FD28DB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

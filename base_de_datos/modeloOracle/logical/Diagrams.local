@@ -1,4 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
-   <object objectType="main_view" objectID="2F1A5DA5-7C6C-5E0C-D695-65FA26FD62A9" name="Logical" visible="false"/>
+   <object objectType="main_view" objectID="2F1A5DA5-7C6C-5E0C-D695-65FA26FD62A9" name="Logical" visible="true"/>
+   <object objectType="sub_view" objectID="F84278A3-00E6-3540-0C89-70E60039FAEB" name="From_RM_Vista_Administrador" visible="false"/>
+   <object objectType="sub_view" objectID="C0887C77-640D-BEAC-E306-ABFE6F6F9C35" name="From_RM_Vista_Alumno" visible="false"/>
+   <object objectType="sub_view" objectID="2FDF7263-25E3-3619-45E2-3A453B24E35D" name="From_RM_Vista_Asesor" visible="false"/>
+   <object objectType="sub_view" objectID="E59B007A-88D8-0E64-F569-1A8AD15BB6FD" name="From_RM_Vista_Equipo" visible="false"/>
+   <object objectType="sub_view" objectID="2966CEBC-0440-1EC7-72ED-919D08DB77A5" name="From_RM_Vista_Proyecto" visible="false"/>
+   <object objectType="sub_view" objectID="650AF7FF-2A6F-98E5-8874-0D987DE293E9" name="From_RM_Vista_Proyecto_Detalle" visible="false"/>
+   <object objectType="sub_view" objectID="43BC98F1-5444-48F8-7E6E-1C7303ABC637" name="From_RM_Vista_Tecnologico" visible="false"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>
