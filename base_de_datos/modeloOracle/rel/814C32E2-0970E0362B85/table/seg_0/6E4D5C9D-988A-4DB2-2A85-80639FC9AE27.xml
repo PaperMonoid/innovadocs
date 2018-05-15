@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E4D5C9D-988A-4DB2-2A85-80639FC9AE27" name="Privilegio">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>4A277130-5137-E2CC-830F-7764E806D8C6</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PrivilegioId" id="5788C94E-69EC-7FB1-290C-2B4A97C282BA">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>8A64ADB8-F4D4-F70E-CA96-E07C18DEB5D2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PrivilegioDescripcion" id="4AD360B5-EA31-7E2D-B4B4-0D6886BDB52B">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>FB248418-33F5-241C-D0E0-530A40F4FBEB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PrivilegioFechaCreacion" id="7138224A-2DFD-F967-7C80-0BA3677F6C26">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>D478343D-A5E9-7000-6FC2-301F927E1D55</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F876747-835D-81D5-5F21-2E11159B4FFC" name="Privilegio_PK">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>7046A01B-11FE-3BB7-8FD5-C855BC9FFE03</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5788C94E-69EC-7FB1-290C-2B4A97C282BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

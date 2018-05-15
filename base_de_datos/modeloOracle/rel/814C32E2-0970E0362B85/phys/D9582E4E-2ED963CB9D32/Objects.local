@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v10g.StorageDesignOraclev10g>
+   <object objectType="User" objectID="MDSYS" name="MDSYS" seqName="seg_0"/>
+   <object objectType="User" objectID="PUBLIC" name="PUBLIC" seqName="seg_0"/>
+   <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0"/>
+   <object objectType="SType" objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" name="XMLTYPE" seqName="seg_0"/>
+   <object objectType="Table" objectID="06287096-B000-2E4D-C31E-1A6CC46FE989" name="Proyecto" seqName="seg_0"/>
+   <object objectType="Table" objectID="08994610-C524-64ED-4B0F-B6DE632FBA84" name="Acceso" seqName="seg_0"/>
+   <object objectType="Table" objectID="0BCF5481-CD56-181C-204D-3E424662BE08" name="Usuario" seqName="seg_0"/>
+   <object objectType="Table" objectID="1F7453C3-84FD-870A-4CE8-368AD78D1695" name="Rol" seqName="seg_0"/>
+   <object objectType="Table" objectID="22BA54C9-DBA0-C8D3-67AB-6C5CDA3CD4E3" name="Tecnologico" seqName="seg_0"/>
+   <object objectType="Table" objectID="2AE5D74E-9C92-020E-F712-3D152E35B94C" name="Alumno" seqName="seg_0"/>
+   <object objectType="Table" objectID="579D2AB6-091E-FFC8-9A89-DCF3B90CAA36" name="Miembro" seqName="seg_0"/>
+   <object objectType="Table" objectID="5BD4754F-64A5-E5A5-D8F3-4418C7D1B9ED" name="Carrera" seqName="seg_0"/>
+   <object objectType="Table" objectID="63372181-A404-1589-19EE-78C41D34A4C9" name="Categoria" seqName="seg_0"/>
+   <object objectType="Table" objectID="6E4D5C9D-988A-4DB2-2A85-80639FC9AE27" name="Privilegio" seqName="seg_0"/>
+   <object objectType="Table" objectID="8176045A-1E23-FEF7-B863-EC0867E873E7" name="Asesor" seqName="seg_0"/>
+   <object objectType="Table" objectID="81E03733-A923-819E-B8BD-556BFE56D4EA" name="Equipo" seqName="seg_0"/>
+   <object objectType="Table" objectID="8E68579E-D30E-5110-8D5C-3BA91D419576" name="Estado" seqName="seg_0"/>
+   <object objectType="Table" objectID="DA066591-5387-28A6-1DD1-FF570B098D27" name="Genero" seqName="seg_0"/>
+   <object objectType="Table" objectID="FECAC836-BD6F-13D5-2D03-09230C5920A6" name="Municipio" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.storage.oracle.v10g.StorageDesignOraclev10g>

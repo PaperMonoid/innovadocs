@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1911F7E1-7F35-5B66-4164-1CD336936FB4" containerWithKeyObject="08994610-C524-64ED-4B0F-B6DE632FBA84" localFKIndex="970FF030-F80B-DBA7-7879-1D3B9FAB8BD9" name="Acceso_Privilegio_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:12:01 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6E4D5C9D-988A-4DB2-2A85-80639FC9AE27</referredTableID>
+<keyObject>2F876747-835D-81D5-5F21-2E11159B4FFC</keyObject>
+<referredKeyID>2F876747-835D-81D5-5F21-2E11159B4FFC</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

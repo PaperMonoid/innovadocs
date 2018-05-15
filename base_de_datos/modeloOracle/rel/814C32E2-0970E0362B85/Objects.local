@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="08994610-C524-64ED-4B0F-B6DE632FBA84" name="Acceso" seqName="seg_0"/>
+   <object objectType="Table" objectID="2AE5D74E-9C92-020E-F712-3D152E35B94C" name="Alumno" seqName="seg_0"/>
+   <object objectType="Table" objectID="8176045A-1E23-FEF7-B863-EC0867E873E7" name="Asesor" seqName="seg_0"/>
+   <object objectType="Table" objectID="5BD4754F-64A5-E5A5-D8F3-4418C7D1B9ED" name="Carrera" seqName="seg_0"/>
+   <object objectType="Table" objectID="63372181-A404-1589-19EE-78C41D34A4C9" name="Categoria" seqName="seg_0"/>
+   <object objectType="Table" objectID="81E03733-A923-819E-B8BD-556BFE56D4EA" name="Equipo" seqName="seg_0"/>
+   <object objectType="Table" objectID="8E68579E-D30E-5110-8D5C-3BA91D419576" name="Estado" seqName="seg_0"/>
+   <object objectType="Table" objectID="DA066591-5387-28A6-1DD1-FF570B098D27" name="Genero" seqName="seg_0"/>
+   <object objectType="Table" objectID="579D2AB6-091E-FFC8-9A89-DCF3B90CAA36" name="Miembro" seqName="seg_0"/>
+   <object objectType="Table" objectID="FECAC836-BD6F-13D5-2D03-09230C5920A6" name="Municipio" seqName="seg_0"/>
+   <object objectType="Table" objectID="6E4D5C9D-988A-4DB2-2A85-80639FC9AE27" name="Privilegio" seqName="seg_0"/>
+   <object objectType="Table" objectID="06287096-B000-2E4D-C31E-1A6CC46FE989" name="Proyecto" seqName="seg_0"/>
+   <object objectType="Table" objectID="1F7453C3-84FD-870A-4CE8-368AD78D1695" name="Rol" seqName="seg_0"/>
+   <object objectType="Table" objectID="22BA54C9-DBA0-C8D3-67AB-6C5CDA3CD4E3" name="Tecnologico" seqName="seg_0"/>
+   <object objectType="Table" objectID="0BCF5481-CD56-181C-204D-3E424662BE08" name="Usuario" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="1911F7E1-7F35-5B66-4164-1CD336936FB4" name="Acceso_Privilegio_FK" seqName="seg_0" containerID="08994610-C524-64ED-4B0F-B6DE632FBA84" refContainerID="6E4D5C9D-988A-4DB2-2A85-80639FC9AE27"/>
+   <object objectType="FKIndexAssociation" objectID="906E5DE6-359E-5957-418E-EE9E9083FF9B" name="Acceso_Usuario_FK" seqName="seg_0" containerID="08994610-C524-64ED-4B0F-B6DE632FBA84" refContainerID="0BCF5481-CD56-181C-204D-3E424662BE08"/>
+   <object objectType="FKIndexAssociation" objectID="6E0C4BDE-2075-98B9-A02D-51F8DF9A9376" name="Alumno_Carrera_FK" seqName="seg_0" containerID="2AE5D74E-9C92-020E-F712-3D152E35B94C" refContainerID="5BD4754F-64A5-E5A5-D8F3-4418C7D1B9ED"/>
+   <object objectType="FKIndexAssociation" objectID="E60F38F8-7147-74F1-00AB-E95BCDD2968B" name="Alumno_Tecnologico_FK" seqName="seg_0" containerID="2AE5D74E-9C92-020E-F712-3D152E35B94C" refContainerID="22BA54C9-DBA0-C8D3-67AB-6C5CDA3CD4E3"/>
+   <object objectType="FKIndexAssociation" objectID="E6C52144-7312-3AD0-E04C-2CEB8F2A59A4" name="Asesor_Genero_FK" seqName="seg_0" containerID="8176045A-1E23-FEF7-B863-EC0867E873E7" refContainerID="DA066591-5387-28A6-1DD1-FF570B098D27"/>
+   <object objectType="FKIndexAssociation" objectID="256308BA-2875-C70D-F3F5-9342FF4FDD43" name="Equipo_Asesor_FK" seqName="seg_0" containerID="81E03733-A923-819E-B8BD-556BFE56D4EA" refContainerID="8176045A-1E23-FEF7-B863-EC0867E873E7"/>
+   <object objectType="FKIndexAssociation" objectID="E3FF82AE-2786-AB4F-C729-8E232918F766" name="Alumno_Genero_FK" seqName="seg_0" containerID="2AE5D74E-9C92-020E-F712-3D152E35B94C" refContainerID="DA066591-5387-28A6-1DD1-FF570B098D27"/>
+   <object objectType="FKIndexAssociation" objectID="47E17FCA-5E12-670D-3DB2-C63305C71B64" name="Miembro_Alumno_FK" seqName="seg_0" containerID="579D2AB6-091E-FFC8-9A89-DCF3B90CAA36" refContainerID="2AE5D74E-9C92-020E-F712-3D152E35B94C"/>
+   <object objectType="FKIndexAssociation" objectID="D53C02B8-9893-1742-FD68-AE21FC0158E8" name="Miembro_Equipo_FK" seqName="seg_0" containerID="579D2AB6-091E-FFC8-9A89-DCF3B90CAA36" refContainerID="81E03733-A923-819E-B8BD-556BFE56D4EA"/>
+   <object objectType="FKIndexAssociation" objectID="B6457E45-9A91-ABD1-6456-E5B036DB73F7" name="Miembro_Rol_FK" seqName="seg_0" containerID="579D2AB6-091E-FFC8-9A89-DCF3B90CAA36" refContainerID="1F7453C3-84FD-870A-4CE8-368AD78D1695"/>
+   <object objectType="FKIndexAssociation" objectID="F9A2713F-4EC5-10AF-FFF6-412AFFBBE5F8" name="Municipio_Estado_FK" seqName="seg_0" containerID="FECAC836-BD6F-13D5-2D03-09230C5920A6" refContainerID="8E68579E-D30E-5110-8D5C-3BA91D419576"/>
+   <object objectType="FKIndexAssociation" objectID="94293636-9A8B-2DB0-F9BD-7063808F8842" name="Proyecto_Categoria_FK" seqName="seg_0" containerID="06287096-B000-2E4D-C31E-1A6CC46FE989" refContainerID="63372181-A404-1589-19EE-78C41D34A4C9"/>
+   <object objectType="FKIndexAssociation" objectID="8B93EA59-6A66-BF24-1D39-658D73ABDCB3" name="Proyecto_Equipo_FK" seqName="seg_0" containerID="06287096-B000-2E4D-C31E-1A6CC46FE989" refContainerID="81E03733-A923-819E-B8BD-556BFE56D4EA"/>
+   <object objectType="FKIndexAssociation" objectID="F55C0032-8B2F-309E-67D4-7F024A64AB48" name="Tecnologico_Municipio_FK" seqName="seg_0" containerID="22BA54C9-DBA0-C8D3-67AB-6C5CDA3CD4E3" refContainerID="FECAC836-BD6F-13D5-2D03-09230C5920A6"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

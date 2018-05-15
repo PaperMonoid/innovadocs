@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2AE5D74E-9C92-020E-F712-3D152E35B94C" name="Alumno">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>635413FD-9E9F-E0AF-13BD-AFC1B4E9E5C4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AlumnoId" id="98A78857-4676-4CFC-38AD-9219562D9C3C">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>AF14CC74-EF37-4C32-069B-C456D2B4027A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>38E6ADD0-BD35-5C15-CB23-7AE980F48493</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AlumnoNombre" id="E3FA688B-60FC-F4D5-0442-BCA573BA2BBB">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>E0A568BA-81B3-38DA-960B-B5A1241260B6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A58C705C-54B9-99AD-018A-9ACCEB393C8A</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AlumnoApellidoPaterno" id="55EA482A-3C1D-80DD-B787-5E1599A18BE4">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>9DDE8F15-FC06-BD5E-8247-331FD2CA92EF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>22BA2D9E-F077-CFAF-B647-3B59E6600297</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AlumnoApellidoMaterno" id="61702CA6-F2A2-28F3-1A46-FEEC499DD04F">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>FDC1FF0B-EA48-5A2E-1781-40E7F172A3BA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>22BA2D9E-F077-CFAF-B647-3B59E6600297</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AlumnoGeneroId" id="033DD3C9-8018-B48B-E9C3-3B1DCA038775">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>F64EA105-9492-B13C-34B2-13883C4481B9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6738E076-3859-94EC-5F23-BE57DB1C31A3</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3FF82AE-2786-AB4F-C729-8E232918F766" referredColumn="E3E813B9-DEEA-360B-C2D9-08859FBBB6FA"/>
+</associations>
+</Column>
+<Column name="AlumnoCarreraId" id="548075DD-D62A-0169-BAE8-A5F62DBAC099">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:02:44 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E0C4BDE-2075-98B9-A02D-51F8DF9A9376" referredColumn="6E6F6EC7-D76B-B8BD-80E1-126969100EE8"/>
+</associations>
+</Column>
+<Column name="AlumnoTecnologicoId" id="3E258355-F504-9D2B-4C38-9E5B06F35C0E">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:02:44 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E60F38F8-7147-74F1-00AB-E95BCDD2968B" referredColumn="A1E43C44-3E5B-08CA-3844-597C89D20DE5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB7168BF-CE7E-34D3-44CC-521797306625" name="Alumno_PK">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>842D8B5D-6481-6BA7-B1EE-0FDA1A962495</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98A78857-4676-4CFC-38AD-9219562D9C3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E1E2873-200A-84AF-6B5F-F7E1019F3A76" name="Alumno_Carrera_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:04:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="548075DD-D62A-0169-BAE8-A5F62DBAC099"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D22483CF-F50B-2622-2574-0CA370DC15F0" name="Alumno_Tecnologico_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:08:33 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E258355-F504-9D2B-4C38-9E5B06F35C0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3C6DD3D-CA72-8A23-91CD-C5A8CD458DAF" name="Alumno_Genero_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:22:27 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="033DD3C9-8018-B48B-E9C3-3B1DCA038775"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

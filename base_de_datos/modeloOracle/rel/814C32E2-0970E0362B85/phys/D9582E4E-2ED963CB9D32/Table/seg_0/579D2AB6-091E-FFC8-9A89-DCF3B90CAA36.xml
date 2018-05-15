@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="Miembro" directorySegmentName="seg_0" id="579D2AB6-091E-FFC8-9A89-DCF3B90CAA36">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<storeAs>CLOB</storeAs>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MiembroAlumnoId" id="23389CBB-DFE9-7794-41B3-C94D6F96435F">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="MiembroCorreoElectronico" id="3BE6D676-415E-FBB3-AE77-09C634A3556F">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="MiembroRolId" id="6837CAFC-C50D-9B62-4707-B5760D4BF5FD">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="MiembroEquipoId" id="8EB4F55F-EF94-C023-A00E-05F73599666B">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="MiembroTelefono" id="B68DB60B-D570-1D1E-748F-51498CD831EB">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="MiembroId" id="E19283F5-CF71-E724-59A2-D1B9D8B97BA2">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Miembro_Equipo_FK" id="1E7EB181-13A5-8994-7425-4C154AFC7640">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:58:53 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Miembro_Rol_FK" id="6DD7A99D-FFB6-21C1-06E6-7A83F9E43F5B">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:58:53 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Miembro_Alumno_FK" id="74FEB69C-DE0F-01D7-1996-DD30F2070499">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:58:53 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Miembro_PK" id="6D38853B-B9F3-86EC-373A-2D4EBC6C36A2">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

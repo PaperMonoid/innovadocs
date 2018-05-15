@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="06287096-B000-2E4D-C31E-1A6CC46FE989" name="Proyecto">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>41A44307-0553-5288-51F2-13F7C14B861E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ProyectoId" id="925ACB54-C9D0-D49D-638F-0F21C550068F">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>2C6F76D6-3F6C-5258-5AB5-1991E62FB67B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProyectoFecha" id="03DF8695-A78F-B429-1429-2BF75B8E561E">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>D5DDF9AF-A7FC-2CB0-C1B7-909DE3BE8F46</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProyectoNombre" id="FFC5B1B5-7CB6-997F-1FD3-ED158550A10A">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>71049E29-163C-62B5-4A02-628C07BF69A2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProyectoNombreCompleto" id="CD117C3D-A799-CF2B-F064-9AA03EF71982">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>FF27BA4C-3FF2-AEC3-373C-11ED51BFBDDC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7B6765C2-7124-58D2-19C9-4E434E0B4475</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProyectoDescripcion" id="0CA83DE0-4357-6124-4FDB-1DD419E888FC">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>669FFB2E-F936-560C-3199-F6905ED9D5B7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProyectoDescripcionLarga" id="A4FAB79E-D801-2B98-B141-6AAC6F5DE1E5">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>1CEB85C8-3937-B4AE-49BC-EAE586919CCA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>870E3E19-A7BF-58A0-9FB4-AF951E1240DF</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProyectoImagen" id="F71E4281-285C-56B8-D591-9A5BCABE43EF">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>E36CCB90-B28D-2AC0-1546-DD2CDE696798</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProyectoVistas" id="75CF6099-6F44-6369-CEED-A0C9E46B2BA2">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>383D6BFA-984E-2986-6B08-859CC201B6B9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProyectoInteres" id="FD02042F-4E18-EA7B-0DFD-B8456DE4B1CB">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>CE43693A-032B-C53C-83C7-2D368EB614DD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ProyectoEquipoId" id="12F27779-26F8-525E-4FC0-F6AA93E287C3">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>FD97031E-E7F1-39E2-D83A-B20BBCA03651</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B93EA59-6A66-BF24-1D39-658D73ABDCB3" referredColumn="FC81A7A5-F015-1E04-4503-17BD2C1E8ADD"/>
+</associations>
+</Column>
+<Column name="ProyectoCategoriaId" id="F483300E-5B9D-EF3C-74E0-596DAE7EB2F7">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:49:59 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94293636-9A8B-2DB0-F9BD-7063808F8842" referredColumn="10BBEC2A-B439-5FAB-8BE9-81A61FE4DCC3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E76E16C6-AF07-4B6D-618A-7362CB8BB4DE" name="Proyecto_PK">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>6ACAACC6-039D-31CC-0457-6B5DA1AE571B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="925ACB54-C9D0-D49D-638F-0F21C550068F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="748BAA6F-C219-FC48-8229-4DE49A0991C6" name="Proyecto_Categoria_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:53:47 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F483300E-5B9D-EF3C-74E0-596DAE7EB2F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB18F199-E8BD-6218-FA85-F8AB8EE752B8" name="Proyecto_Equipo_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:54:30 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12F27779-26F8-525E-4FC0-F6AA93E287C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

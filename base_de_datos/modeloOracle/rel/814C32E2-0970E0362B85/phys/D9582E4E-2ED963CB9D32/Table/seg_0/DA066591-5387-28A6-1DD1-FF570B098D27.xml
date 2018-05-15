@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="Genero" directorySegmentName="seg_0" id="DA066591-5387-28A6-1DD1-FF570B098D27">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<storeAs>CLOB</storeAs>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="GeneroDescripcion" id="B6E22E6C-6342-6303-5AF4-608ED4AC1762">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="GeneroId" id="E3E813B9-DEEA-360B-C2D9-08859FBBB6FA">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Genero_PK" id="BA5E375B-0597-0ECB-5AAD-73FC8AEFE4D7">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

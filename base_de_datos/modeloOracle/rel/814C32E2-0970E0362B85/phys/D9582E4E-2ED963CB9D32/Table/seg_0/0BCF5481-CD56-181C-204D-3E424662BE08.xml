@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="Usuario" directorySegmentName="seg_0" id="0BCF5481-CD56-181C-204D-3E424662BE08">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<storeAs>CLOB</storeAs>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="UsuarioId" id="33458E00-8040-8C39-65C9-BC249EA64FA2">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="UsuarioFechaCreacion" id="C23DE52B-3CF6-67CE-8B04-B6FAD312AD30">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="UsuarioClave" id="E5BAE944-5F3B-F1C0-5E2E-65EB187E02DF">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Usuario_PK" id="284276B0-9666-AEC8-1DC9-86C1F33B8F7A">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

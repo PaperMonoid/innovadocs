@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08994610-C524-64ED-4B0F-B6DE632FBA84" name="Acceso">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>1061660E-C1A3-DE44-F256-3DC65F01F91A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AccesoId" id="7E061D3D-FB70-9360-28A1-8F4C3A7F05C6">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>26B0F681-EA59-DC0E-4713-34E8C8A2C9C0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccesoPrivilegioId" id="8502415F-BCF0-82E9-6BF8-1CD84D17F5B0">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>0559BCA8-5EC7-98FD-A6EE-C5408EA18061</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1911F7E1-7F35-5B66-4164-1CD336936FB4" referredColumn="5788C94E-69EC-7FB1-290C-2B4A97C282BA"/>
+</associations>
+</Column>
+<Column name="AccesoUsuarioId" id="F1E8E9A8-DD65-4364-6815-A97001E9BC80">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>5BD9B58B-FF9F-81F0-0D16-F07DBBB86E8B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="906E5DE6-359E-5957-418E-EE9E9083FF9B" referredColumn="33458E00-8040-8C39-65C9-BC249EA64FA2"/>
+</associations>
+</Column>
+<Column name="AccesoLectura" id="69E359F2-DDD8-0ABE-D43C-8CB087BDCCD3">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>2B26DFC7-CA07-B437-1D1B-DC248593FF66</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccesoEscritura" id="7FEB90DA-1FDF-B30A-FEC3-9F4E08E0945D">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>DB5150AF-11CD-843B-0A8F-3FEB6B0E8EE1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccesoEjecucion" id="8018D197-32F7-47B5-E379-FD4185E67B84">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>5B02C4A7-1720-9865-0B90-C804698C0C16</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AccesoFechaCreacion" id="BAA0AD7E-D5CE-E896-94B9-50B5496D6FB8">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>BAC40803-7904-7055-86ED-9D30350E90A8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6745196-8D2F-2B58-B232-64921CDDE001" name="Acceso_PK">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>BBF2F399-D2B9-3B00-17CB-C42D76254EB8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E061D3D-FB70-9360-28A1-8F4C3A7F05C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="970FF030-F80B-DBA7-7879-1D3B9FAB8BD9" name="Acceso_Privilegio_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:12:01 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8502415F-BCF0-82E9-6BF8-1CD84D17F5B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F18F856-2D48-430E-81ED-BDF2B973FE0E" name="Acceso_Usuario_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:12:01 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1E8E9A8-DD65-4364-6815-A97001E9BC80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

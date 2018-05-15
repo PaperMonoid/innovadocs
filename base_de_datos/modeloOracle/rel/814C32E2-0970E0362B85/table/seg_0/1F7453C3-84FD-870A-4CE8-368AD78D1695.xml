@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F7453C3-84FD-870A-4CE8-368AD78D1695" name="Rol">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>9A5339A1-88D1-0C3E-9078-9D577801D7A1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RolId" id="BBB4E07F-45BF-575D-C8EC-682F2E0B7582">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>38777779-348D-A9BD-6B2F-4BB6C5262DE7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RolDescripcion" id="668B1618-ECED-72E8-E957-719162CBEEA1">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>85E5B2AA-D291-5DAA-32AE-4E45D9163803</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32228DC7-3061-7F23-7269-40207BD46303" name="Rol_PK">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>F85891B6-6B99-00E4-A6A5-738A302DA799</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBB4E07F-45BF-575D-C8EC-682F2E0B7582"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

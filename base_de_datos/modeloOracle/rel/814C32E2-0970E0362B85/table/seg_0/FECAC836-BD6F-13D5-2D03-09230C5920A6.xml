@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FECAC836-BD6F-13D5-2D03-09230C5920A6" name="Municipio">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>881D9C48-D97A-8D66-1708-DDB190DA4E01</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MunicipioId" id="8E30C52D-4E65-FB0E-6F0C-8EFB02F69ABA">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>BB622382-8838-8E0B-FA3B-D8FFC6191498</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<domain>430BE242-EC7C-48FE-2DD6-A33E0AAEA3A1</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MunicipioNombreAbreviado" id="4D85B67D-F434-925A-D0D4-420E3DCC0EBE">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>F953D1B8-B774-C121-5E10-D0049C7D1086</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>22BA2D9E-F077-CFAF-B647-3B59E6600297</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MunicipioNombreCompleto" id="81D021CE-0E87-BE31-D001-8B5E19344CD3">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>6049A1C2-71E5-42F7-C193-895BA3BDA732</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A58C705C-54B9-99AD-018A-9ACCEB393C8A</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MunicipioEstadoId" id="997A5E4D-11E1-3E1C-E9C8-2BFF7B188C5F">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>83D8BF0B-B5EA-B000-403A-37489FCDD33B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9A2713F-4EC5-10AF-FFF6-412AFFBBE5F8" referredColumn="D1330586-374C-39B3-BBEC-30DA44C6F320"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="54E67144-1701-F3CB-EA80-ADDE0B29DEDB" name="Municipio_PK">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>B06DE28A-9DC0-A350-CD4A-2FCF2E0C8AAD</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="997A5E4D-11E1-3E1C-E9C8-2BFF7B188C5F"/>
+<colUsage columnID="8E30C52D-4E65-FB0E-6F0C-8EFB02F69ABA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41B16308-238D-8647-F887-35156C01B324" name="Municipio_Estado_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:07:10 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="997A5E4D-11E1-3E1C-E9C8-2BFF7B188C5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

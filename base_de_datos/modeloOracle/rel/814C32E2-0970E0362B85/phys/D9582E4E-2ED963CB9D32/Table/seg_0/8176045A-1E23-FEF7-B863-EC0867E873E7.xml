@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="Asesor" directorySegmentName="seg_0" id="8176045A-1E23-FEF7-B863-EC0867E873E7">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<storeAs>CLOB</storeAs>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="AsesorCorreoElectronico" id="2E3BA94A-957E-3821-AD23-643185846B2C">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AsesorApellidoPaterno" id="2F4ABEFF-B33F-C840-8B17-271FF4B2815D">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AsesorTitulo" id="35B4DA70-50D6-728D-1644-A3D58534AAD3">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AsesorId" id="9D8E98F2-D59C-AA40-75A5-D6C49F75E3F0">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AsesorTelefono" id="C7873866-17A5-2B15-2F51-A9A1825A5F98">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AsesorNombre" id="CB8939B1-55CF-E9B3-469D-6C1C839558C8">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AsesorApellidoMaterno" id="F4E4CBA5-ABEB-3150-AF86-DC5F39CD35CF">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AsesorGeneroId" id="F767A3C5-4DFE-AF82-DC32-A72D3BFFEEC7">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Asesor_Genero_FK" id="CEAF07D5-2E33-B684-9689-4496AED14EA7">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:57:41 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Asesor_PK" id="BABD9C3E-B9C6-E5BC-77B6-38D7FB87385A">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

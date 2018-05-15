@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="Alumno" directorySegmentName="seg_0" id="2AE5D74E-9C92-020E-F712-3D152E35B94C">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<storeAs>CLOB</storeAs>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="AlumnoGeneroId" id="033DD3C9-8018-B48B-E9C3-3B1DCA038775">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AlumnoTecnologicoId" id="3E258355-F504-9D2B-4C38-9E5B06F35C0E">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:02:44 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AlumnoCarreraId" id="548075DD-D62A-0169-BAE8-A5F62DBAC099">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:02:44 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AlumnoApellidoPaterno" id="55EA482A-3C1D-80DD-B787-5E1599A18BE4">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AlumnoApellidoMaterno" id="61702CA6-F2A2-28F3-1A46-FEEC499DD04F">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AlumnoId" id="98A78857-4676-4CFC-38AD-9219562D9C3C">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="AlumnoNombre" id="E3FA688B-60FC-F4D5-0442-BCA573BA2BBB">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Alumno_Carrera_FK" id="9E1E2873-200A-84AF-6B5F-F7E1019F3A76">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:04:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Alumno_Genero_FK" id="B3C6DD3D-CA72-8A23-91CD-C5A8CD458DAF">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:22:27 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Alumno_Tecnologico_FK" id="D22483CF-F50B-2622-2574-0CA370DC15F0">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:08:33 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Alumno_PK" id="DB7168BF-CE7E-34D3-44CC-521797306625">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

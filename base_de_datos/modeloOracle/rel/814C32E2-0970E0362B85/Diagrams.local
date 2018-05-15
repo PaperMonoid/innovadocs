@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="95B4CFCF-C1E7-DB97-1629-EB9FB8675E1A" name="Relational_1" visible="true"/>
+   <object objectType="sub_view" objectID="71A2B1F4-7120-6B64-9E1F-37910F3A7E16" name="Vista_Administrador" visible="false"/>
+   <object objectType="sub_view" objectID="E5A26B0D-C763-020B-E165-8E5F3C1908A5" name="Vista_Alumno" visible="false"/>
+   <object objectType="sub_view" objectID="60E34959-C8AE-6AC2-A1C3-99EA784FF6DE" name="Vista_Asesor" visible="false"/>
+   <object objectType="sub_view" objectID="AFA1A7CD-7343-2DE4-DA8E-D7057BC20EBF" name="Vista_Equipo" visible="false"/>
+   <object objectType="sub_view" objectID="0EB05697-5E6D-5BCC-93D0-AC65A35AEAE7" name="Vista_Proyecto" visible="false"/>
+   <object objectType="sub_view" objectID="3E0B1E74-1C57-950A-2AF4-9157CB99A723" name="Vista_Proyecto_Detalle" visible="false"/>
+   <object objectType="sub_view" objectID="5CA16CA4-736F-E5E8-F3D0-5E5E99ADF1C0" name="Vista_Tecnologico" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

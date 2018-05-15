@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="innovadocs_Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_9" id="0D907D81-8DD5-91A0-6A03-15833BD412F1">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>9</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_25" id="22BA2D9E-F077-CFAF-B647-3B59E6600297">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_11" id="38E6ADD0-BD35-5C15-CB23-7AE980F48493">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>11</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_64" id="3F19F4F9-32C9-CBA7-E21D-98B6B928A8C5">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>64</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="SMALLINT_0_0_6" id="430BE242-EC7C-48FE-2DD6-A33E0AAEA3A1">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT018</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_125" id="55C4C4C3-D7E8-E4CB-24C5-E14471619974">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>125</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_1" id="6738E076-3859-94EC-5F23-BE57DB1C31A3">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>1</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="7B6765C2-7124-58D2-19C9-4E434E0B4475">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>100</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_1024" id="870E3E19-A7BF-58A0-9FB4-AF951E1240DF">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>1024</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="9B494C7F-9F91-FE9A-FD60-04EAE7E01459">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_512" id="9ED73E8F-DF5B-426E-8511-616601E2CFB3">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>512</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_140" id="A20B0EB7-3C5F-855D-BC19-443F733A7AD3">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>140</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="A58C705C-54B9-99AD-018A-9ACCEB393C8A">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>50</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_10" id="BC84F54F-C16F-F89F-5A7D-9F069BDFE2B6">
+         <createdBy>Sven</createdBy>
+         <createdTime>2018-05-15 21:39:08 UTC</createdTime>
+         <ownerDesignName>modeloOracle</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>10</dataTypeSize>
+         <fileName>innovadocs_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

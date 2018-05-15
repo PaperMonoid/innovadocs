@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8176045A-1E23-FEF7-B863-EC0867E873E7" name="Asesor">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>52A73392-4B0B-AFD6-6FA3-803142AD807B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AsesorId" id="9D8E98F2-D59C-AA40-75A5-D6C49F75E3F0">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>52D2D302-5326-2D70-8518-6FA4F5292A60</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AsesorTitulo" id="35B4DA70-50D6-728D-1644-A3D58534AAD3">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>43398A2A-0CE6-D772-5C36-9A319DDDB3D0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AsesorNombre" id="CB8939B1-55CF-E9B3-469D-6C1C839558C8">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>9AC99E38-A882-1343-123B-2CD1FEA28B59</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A58C705C-54B9-99AD-018A-9ACCEB393C8A</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AsesorApellidoPaterno" id="2F4ABEFF-B33F-C840-8B17-271FF4B2815D">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>8A4E1E6C-F5F5-7C8F-D4AF-5845DE3B45B2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>22BA2D9E-F077-CFAF-B647-3B59E6600297</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AsesorApellidoMaterno" id="F4E4CBA5-ABEB-3150-AF86-DC5F39CD35CF">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>F907C5A1-D4EF-5719-8CBB-652A3F357330</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>22BA2D9E-F077-CFAF-B647-3B59E6600297</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AsesorGeneroId" id="F767A3C5-4DFE-AF82-DC32-A72D3BFFEEC7">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>6E585F5D-0BB9-425F-1653-5D386EE571F5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6738E076-3859-94EC-5F23-BE57DB1C31A3</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6C52144-7312-3AD0-E04C-2CEB8F2A59A4" referredColumn="E3E813B9-DEEA-360B-C2D9-08859FBBB6FA"/>
+</associations>
+</Column>
+<Column name="AsesorTelefono" id="C7873866-17A5-2B15-2F51-A9A1825A5F98">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>29E1B994-CAC5-934C-9499-D0C672C279EC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>BC84F54F-C16F-F89F-5A7D-9F069BDFE2B6</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AsesorCorreoElectronico" id="2E3BA94A-957E-3821-AD23-643185846B2C">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>3286AE80-031D-0AA6-2BB6-54F96E61B863</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A58C705C-54B9-99AD-018A-9ACCEB393C8A</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BABD9C3E-B9C6-E5BC-77B6-38D7FB87385A" name="Asesor_PK">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>F2C3A4B1-433B-09FF-AF7F-D89FF00A4F43</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D8E98F2-D59C-AA40-75A5-D6C49F75E3F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEAF07D5-2E33-B684-9689-4496AED14EA7" name="Asesor_Genero_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:57:41 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F767A3C5-4DFE-AF82-DC32-A72D3BFFEEC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

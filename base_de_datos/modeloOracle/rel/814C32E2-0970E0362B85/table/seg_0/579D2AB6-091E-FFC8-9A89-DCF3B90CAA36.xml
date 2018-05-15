@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="579D2AB6-091E-FFC8-9A89-DCF3B90CAA36" name="Miembro">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>EA48B304-D680-6ABC-AC55-87F9F6D5B137</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MiembroId" id="E19283F5-CF71-E724-59A2-D1B9D8B97BA2">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>D4263CBA-4044-9B9D-85AA-2A7E96E93890</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MiembroEquipoId" id="8EB4F55F-EF94-C023-A00E-05F73599666B">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>C2955974-529B-150A-6174-A46E28D4F42A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D53C02B8-9893-1742-FD68-AE21FC0158E8" referredColumn="FC81A7A5-F015-1E04-4503-17BD2C1E8ADD"/>
+</associations>
+</Column>
+<Column name="MiembroAlumnoId" id="23389CBB-DFE9-7794-41B3-C94D6F96435F">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>FE153A19-7AF1-0628-A4A9-93AB92D01A11</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>38E6ADD0-BD35-5C15-CB23-7AE980F48493</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47E17FCA-5E12-670D-3DB2-C63305C71B64" referredColumn="98A78857-4676-4CFC-38AD-9219562D9C3C"/>
+</associations>
+</Column>
+<Column name="MiembroRolId" id="6837CAFC-C50D-9B62-4707-B5760D4BF5FD">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>EA014327-CFF1-BFF3-6EBE-3768933D36A7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6457E45-9A91-ABD1-6456-E5B036DB73F7" referredColumn="BBB4E07F-45BF-575D-C8EC-682F2E0B7582"/>
+</associations>
+</Column>
+<Column name="MiembroTelefono" id="B68DB60B-D570-1D1E-748F-51498CD831EB">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>82A81F23-6839-AB72-72C1-ABC900CB831A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MiembroCorreoElectronico" id="3BE6D676-415E-FBB3-AE77-09C634A3556F">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>C4497D85-210C-06D0-12E6-8BA14925AA31</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D38853B-B9F3-86EC-373A-2D4EBC6C36A2" name="Miembro_PK">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>B587F73E-4E5D-29A0-E32A-8C4920D26BA9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E19283F5-CF71-E724-59A2-D1B9D8B97BA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E7EB181-13A5-8994-7425-4C154AFC7640" name="Miembro_Equipo_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:58:53 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EB4F55F-EF94-C023-A00E-05F73599666B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74FEB69C-DE0F-01D7-1996-DD30F2070499" name="Miembro_Alumno_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:58:53 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23389CBB-DFE9-7794-41B3-C94D6F96435F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DD7A99D-FFB6-21C1-06E6-7A83F9E43F5B" name="Miembro_Rol_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:58:53 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6837CAFC-C50D-9B62-4707-B5760D4BF5FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

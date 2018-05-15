@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81E03733-A923-819E-B8BD-556BFE56D4EA" name="Equipo">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>959D6C63-4868-F905-1DAD-AD8A348C807F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EquipoId" id="FC81A7A5-F015-1E04-4503-17BD2C1E8ADD">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>7394ABBE-8DE8-8D9C-0FBC-64B74E517BBF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EquipoAsesorId" id="5F16AD1A-6B25-7ACE-AA63-43C78A69F1C9">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>8C14275E-22BD-FEA0-1439-152365F89FB8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="256308BA-2875-C70D-F3F5-9342FF4FDD43" referredColumn="9D8E98F2-D59C-AA40-75A5-D6C49F75E3F0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D5D9468-58B9-45CF-DC49-0F6D01C39C5A" name="Equipo_PK">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>5F23095F-D562-3F17-EC63-791A44BB0CD9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC81A7A5-F015-1E04-4503-17BD2C1E8ADD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="287738C7-74D9-8A12-14EC-86A0D23C1D93" name="Equipo_Asesor_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:57:12 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F16AD1A-6B25-7ACE-AA63-43C78A69F1C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

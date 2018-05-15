@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22BA54C9-DBA0-C8D3-67AB-6C5CDA3CD4E3" name="Tecnologico">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>5B2F396E-6865-602D-13BD-3D9722F08A70</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TecnologicoId" id="A1E43C44-3E5B-08CA-3844-597C89D20DE5">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>4E0849DF-BCD0-0B05-90DC-C2B491A5C45E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TecnologicoEstadoId" id="645DDCA7-3A41-4601-38C3-9EF29E550025">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>AEEA52D0-B83D-16B7-5846-0AFB46204B16</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F55C0032-8B2F-309E-67D4-7F024A64AB48" referredColumn="997A5E4D-11E1-3E1C-E9C8-2BFF7B188C5F"/>
+</associations>
+</Column>
+<Column name="TecnologicoMunicipioId" id="E3EBD0B1-696A-0D3B-6F5E-08532A1C502F">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>C5DEC45A-9D4A-2069-DEAC-83125011F263</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<domain>430BE242-EC7C-48FE-2DD6-A33E0AAEA3A1</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F55C0032-8B2F-309E-67D4-7F024A64AB48" referredColumn="8E30C52D-4E65-FB0E-6F0C-8EFB02F69ABA"/>
+</associations>
+</Column>
+<Column name="TecnologicoUbicacion" id="D85998D5-C97D-2E91-FFC0-9A019EA08018">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>95A7B898-30F4-9937-66D9-EC1AA5A00BE1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>55C4C4C3-D7E8-E4CB-24C5-E14471619974</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E3420B2-6732-F902-73E0-70253BDC4692" name="Tecnologico_PK">
+<sourceDDLFile>innovadocs.sql</sourceDDLFile>
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<importedID>58972445-A70E-3B20-4290-A2E54FFC605C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1E43C44-3E5B-08CA-3844-597C89D20DE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE1A68BC-13AD-F3A4-C280-B11E206DD8F5" name="Tecnologico_Municipio_FK">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 22:07:55 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="645DDCA7-3A41-4601-38C3-9EF29E550025"/>
+<colUsage columnID="E3EBD0B1-696A-0D3B-6F5E-08532A1C502F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

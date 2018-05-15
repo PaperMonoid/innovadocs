@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="Proyecto" directorySegmentName="seg_0" id="06287096-B000-2E4D-C31E-1A6CC46FE989">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<storeAs>CLOB</storeAs>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ProyectoFecha" id="03DF8695-A78F-B429-1429-2BF75B8E561E">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="ProyectoDescripcion" id="0CA83DE0-4357-6124-4FDB-1DD419E888FC">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="ProyectoEquipoId" id="12F27779-26F8-525E-4FC0-F6AA93E287C3">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="ProyectoVistas" id="75CF6099-6F44-6369-CEED-A0C9E46B2BA2">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="ProyectoId" id="925ACB54-C9D0-D49D-638F-0F21C550068F">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="ProyectoDescripcionLarga" id="A4FAB79E-D801-2B98-B141-6AAC6F5DE1E5">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="ProyectoNombreCompleto" id="CD117C3D-A799-CF2B-F064-9AA03EF71982">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="ProyectoCategoriaId" id="F483300E-5B9D-EF3C-74E0-596DAE7EB2F7">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:49:59 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="ProyectoImagen" id="F71E4281-285C-56B8-D591-9A5BCABE43EF">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="ProyectoInteres" id="FD02042F-4E18-EA7B-0DFD-B8456DE4B1CB">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+<ColumnProxy name="ProyectoNombre" id="FFC5B1B5-7CB6-997F-1FD3-ED158550A10A">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+<storeAs>CLOB</storeAs>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Proyecto_Categoria_FK" id="748BAA6F-C219-FC48-8229-4DE49A0991C6">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:53:47 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Proyecto_Equipo_FK" id="AB18F199-E8BD-6218-FA85-F8AB8EE752B8">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:54:30 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Proyecto_PK" id="E76E16C6-AF07-4B6D-618A-7362CB8BB4DE">
+<createdBy>Sven</createdBy>
+<createdTime>2018-05-15 21:39:08 UTC</createdTime>
+<ownerDesignName>modeloOracle</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>
