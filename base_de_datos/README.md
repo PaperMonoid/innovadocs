@@ -30,7 +30,7 @@ Es una base de datos relacional de MySQL que alamacena información relevante a 
 ![Diagrama entidad relacion](diagramas/innovadocs-pata-de-gallo.png)
 
 ## Diagrama entidad relación(OracleDDM)
-![Diagrama entidad relacion](diagramas/innovadocs-pata-de-gallo(OracleDDM.png)
+![Diagrama entidad relacion](diagramas/innovadosc-pata-de-gallo(OracleDDM).png)
 
 ### Vistas de la base de datos
 #### Administrador
