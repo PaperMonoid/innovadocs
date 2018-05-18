@@ -1,96 +1,34 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const app = express()
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const router = express.Router();
+const { analizarConsultas, restificarConsultas } = require("./bd.js");
 
-const mergeJSON = require('merge-json')
-
-const bd = require('./bd.js')
-const usuario = require('./usuario.js')
-const privilegio = require('./privilegio.js')
-const acceso = require('./acceso.js')
-
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header(
+        "Access-Control-Allow-Headers",
+        "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    next();
+});
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
-}))
+}));
 
-const enviar = respuesta => dato => respuesta.send(dato)
+const usuario = require("./puntos_finales/usuario.js");
+const privilegio = require("./puntos_finales/privilegio.js");
+const acceso = require("./puntos_finales/acceso.js");
+const token = require("./puntos_finales/token.js");
+const autorizador = require("./puntos_finales/autorizador.js");
 
-// REST API del Usuario.
-app.post(
-    '/usuario',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(usuario.crear(peticion.body))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
-app.get(
-    '/usuario/:usuarioId',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(usuario.consultar(peticion.params))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
-app.delete(
-    '/usuario/:usuarioId',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(usuario.borrar(peticion.params))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
-// REST API de los privilegios de los usuarios.
-app.post(
-    '/usuario/:usuarioId/privilegio/:privilegioId',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(acceso.asignar(mergeJSON.merge(peticion.params, peticion.body)))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
-app.get(
-    '/usuario/:usuarioId/privilegio/:privilegioId',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(acceso.consultar(peticion.params))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
-// REST API de los privilegios.
-app.post(
-    '/privilegio',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(privilegio.crear(peticion.body))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
-app.get(
-    '/privilegio/:privilegioId',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(privilegio.consultar(peticion.params))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
-app.delete(
-    '/privilegio/:privilegioId',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(privilegio.borrar(peticion.params))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
+app.use("/usuario", usuario);
+app.use("/privilegio", privilegio);
+app.use("/usuario", acceso);
+app.use("/token", token);
+app.use("/privilegio", autorizador);
+app.use("/", router);
 app.listen(
     3001,
     () =>
