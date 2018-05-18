@@ -1,59 +1,26 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const app = express()
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const router = express.Router();
 
-const mergeJSON = require('merge-json')
-
-const bd = require('./bd.js')
-const alumno = require('./alumno.js')
-//const proyecto = require('./proyecto.js')
-
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header(
+        "Access-Control-Allow-Headers",
+        "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    next();
+});
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
-}))
+}));
 
-const enviar = respuesta => dato => respuesta.send(dato)
+const asesor = require("./puntos_finales/asesor.js");
 
-// REST API de los alumnos.
-app.post(
-    '/alumno',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(alumno.crear(mergeJSON.merge(peticion.params, peticion.body)))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
-app.put(
-    '/alumno/:alumnoId',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(alumno.modificar(mergeJSON.merge(peticion.params, peticion.body)))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
-app.get(
-    '/alumno/:alumnoId',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(alumno.consultar(peticion.params))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
-app.delete(
-    '/alumno/:alumnoId',
-    (peticion, respuesta) =>
-        bd.conectar()
-        .then(alumno.borrar(peticion.params))
-        .then(enviar(respuesta))
-        .then(bd.terminar)
-)
-
+app.use("/asesor", asesor);
 app.listen(
-    3000,
+    3002,
     () =>
-        console.log('Eventrozentral escuchando en el puerto 3000...')
+        console.log('Eventozentral escuchando en el puerto 3002...')
 )

@@ -6,6 +6,7 @@ const { buscar } = require("./acceso.js");
 
 const existeCualquiera = R.any(R.compose(R.not, R.isNil));
 const existeIgual = a => b => R.isNil(a) || R.not(R.isNil(a)) && (a == 'true') == b;
+//const existeIgual = a => b => R.isNil(a) || R.not(R.isNil(a)) && a == b;
 const mergeJSONS = (...jsons) => jsons.reduce(mergeJSON.merge, {});
 const enviar = respuesta => dato => respuesta.send(dato);
 

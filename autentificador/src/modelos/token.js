@@ -19,7 +19,7 @@ const obtener = parametros => ({
 });
 
 const verificar = token =>
-      verify(token, process.env.SECRETO_SIPEGA);
+      verify(token, process.env.SECRETO_INNOVADOCS);
 
 module.exports = {
     "obtener": obtener,

@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import InicioSesion from "./componentes/iniciosesion.js";
 import Registro from "./componentes/registro.js";
+import Asesores from "./componentes/asesores.js";
 
 class Componente extends Component {
     render() {
@@ -25,7 +26,7 @@ class App extends Component {
                 <Route path="/inicio-sesion" component={InicioSesion} />
                 <Route path="/registro" component={Registro} />
                 <Route path="/alumnos" component={Componente} />
-                <Route path="/asesores" component={Componente} />
+                <Route path="/asesores" component={Asesores} />
                 <Route path="/proyectos" component={Componente} />
               </Switch>
             </Router>
