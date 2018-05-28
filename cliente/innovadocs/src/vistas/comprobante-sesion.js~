@@ -1,0 +1,11 @@
+import React, { Component } from "react";
+
+class ComprobadorSesion extends Component {
+    constructor(props) {
+    c    super(props);
+    }
+
+    
+}
+
+export default ComprobadorSesion;

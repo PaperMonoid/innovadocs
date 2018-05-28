@@ -4,11 +4,10 @@ import {
     Snackbar,
     Paper,
     TextField,
-    FlatButton,
-    RaisedButton
-} from 'material-ui';
+    Button
+} from "@material-ui/core";
 import { Redirect, Link } from "react-router-dom";
-import { httpPost } from '../xmlhttp.js';
+import { httpPost } from "../xmlhttp.js";
 import Sesion from "./sesion.js";
 import Plantilla from "./plantilla.js";
 
@@ -54,12 +53,12 @@ class Registro extends Component {
                   </small>
                   <br/><br/>
                   <Link to="/inicio-sesion">
-                    <FlatButton label="Iniciar sesión" primary={true} />
+                    <Button variant="flat" label="Iniciar sesión" primary={true} />
                   </Link>
-                  <RaisedButton label="Siguiente" type="submit" primary={true} style={estilos.alineado_derecha} />
+                  <Button variant="raised" label="Siguiente" type="submit" primary={true} style={estilos.alineado_derecha} />
                 </form>
                 <Dialog
-                  actions={<FlatButton label="Aceptar" onClick={this.cerrarDialogo}/>}
+                  actions={<Button variant="flat" label="Aceptar" onClick={this.cerrarDialogo}/>}
                   modal={false}
                   open={this.state.mostrarDialogo}
                   onRequestClose={this.cerrarDialogo}

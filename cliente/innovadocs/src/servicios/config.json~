@@ -1,0 +1,4 @@
+{
+    "autentificador": "http://localhost:3001/",
+    "eventozentral": "http://localhost:3002/"
+}

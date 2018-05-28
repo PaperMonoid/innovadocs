@@ -2,7 +2,7 @@ const R = require("ramda");
 const { obtenerIdInsertado, obtenerFilasAfectadas } = require("../bd.js");
 
 const paginacion = 10;
-const paginar = pagina => (pagina - 1) * paginacion;
+const paginar = pagina => pagina * paginacion;
 
 const Asesor = json => ({
     "id": json["AsesorId"],
@@ -25,20 +25,29 @@ const buscar = parametros => conexion =>
       .then(R.compose(R.head, R.map(Asesor)));
 
 const buscarTodos = parametros => conexion =>
-      conexion.query(
-          "SELECT AsesorId, AsesorTitulo, AsesorNombre, AsesorApellidoPaterno, AsesorApellidoMaterno, AsesorGeneroId, AsesorTelefono, AsesorCorreoElectronico FROM Asesor LIMIT ?, ?",
-          [
-              paginar(parametros["pagina"]),
-              paginacion
-          ]
-      )
-      .then(R.map(Asesor));
+      conexion.query("SELECT COUNT(*) AS 'total' FROM Asesor")
+      .then(R.compose(R.prop("total"), R.head))
+      .then(total =>
+            conexion.query(
+                "SELECT AsesorId, AsesorTitulo, AsesorNombre, AsesorApellidoPaterno, AsesorApellidoMaterno, AsesorGeneroId, AsesorTelefono, AsesorCorreoElectronico FROM Asesor LIMIT ?, ?",
+                [
+                    paginar(parametros["pagina"]),
+                    paginacion
+                ]
+            )
+            .then(R.map(Asesor))
+            .then(asesores => ({
+                pagina: parametros.pagina,
+                paginacion: paginacion,
+                total: total,
+                asesores: asesores
+            })));
 
 const crear = parametros => conexion =>
       conexion.query(
           "INSERT INTO Asesor(AsesorId, AsesorTitulo, AsesorNombre, AsesorApellidoPaterno, AsesorApellidoMaterno, AsesorGeneroId, AsesorTelefono, AsesorCorreoElectronico) VALUES(?, ?, ?, ?, ?, ?, ?, ?)",
           [
-              parametros.nuevaId,
+              parametros.id,
               parametros.titulo,
               parametros.nombre,
               parametros.apellidoPaterno,

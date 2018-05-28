@@ -1,25 +1,23 @@
 import React, { Component } from "react";
 import {
     Table,
-    TableHeader,
+    TableHead,
     TableRow,
-    TableHeaderColumn,
+    TableCell,
     TableBody,
-    TableRowColumn,
-    FloatingActionButton,
     Drawer,
     Dialog,
     TextField,
-    RadioButtonGroup,
-    RadioButton,
-    FlatButton,
-    Paper
-} from "material-ui";
-import ContentAdd from "material-ui/svg-icons/content/add";
-import ActionDelete from "material-ui/svg-icons/action/delete";
-import ImageEdit from "material-ui/svg-icons/image/edit";
+    RadioGroup,
+    Radio,
+    Button,
+    Paper,
+    Icon
+} from "@material-ui/core";
+import AddIcon from "@material-ui/icons/Add";
+import DeleteIcon from "@material-ui/icons/Delete";
 import { Redirect, Link } from "react-router-dom";
-import { httpGet, httpPost } from '../xmlhttp.js';
+import { httpGet, httpPost } from "../xmlhttp.js";
 import Sesion from "./sesion.js";
 import Plantilla from "./plantilla.js";
 import ComprobanteSesion from "./comprobantesesion.js";
@@ -47,7 +45,71 @@ const estilos = {
     }
 };
 
-class FormaAsesor extends Component {
+class FormaAgregarAsesor extends Component {
+    render() {
+        return (
+            <form style={estilos.forma} onSubmit={this.props.onSubmit}>
+              <TextField
+                floatingLabelText="Título"
+                hintText="Título"
+                fullWidth={true}
+                {... this.props.titulo}
+                />
+              <TextField
+                floatingLabelText="Nombre"
+                hintText="Nombre"
+                fullWidth={true}
+                {... this.props.nombre}
+                />
+              <TextField
+                floatingLabelText="Apellido paterno"
+                hintText="Apellido paterno"
+                fullWidth={true}
+                {... this.props.apellidoPaterno}
+                />
+              <TextField
+                floatingLabelText="Apellido materno"
+                hintText="Apellido materno"
+                fullWidth={true}
+                {... this.props.apellidoMaterno}
+                />
+              <br/><br/>
+              <small>Género</small>
+              <RadioGroup defaultSelected="F">
+                <Radio value="F" label="F"/>
+                <Radio value="M" label="M"/>
+              </RadioGroup>
+              <TextField
+                floatingLabelText="Teléfono"
+                hintText="Teléfono"
+                fullWidth={true}
+                {... this.props.telefono}
+                />
+              <TextField
+                floatingLabelText="Correo electrónico"
+                hintText="Correo electrónico"
+                fullWidth={true}
+                {... this.props.correoElectronico}
+                />
+              <br/><br/>
+              <Button variant="flat"
+                label="Cancelar"
+                secondary={true}
+                onClick={this.props.onCancel}
+                />
+              <Button variant="flat"
+                type="submit"
+                label="Aceptar"
+                primary={true}
+                style={estilos.alineado_derecha}
+                />
+            </form>
+        );
+    }
+}
+
+
+class FormaEditarAsesor extends Component {
     render() {
         return (
             <form style={estilos.forma} onSubmit={this.props.onSubmit}>
@@ -84,10 +146,10 @@ class FormaAsesor extends Component {
                 />
               <br/><br/>
               <small>Género</small>
-              <RadioButtonGroup defaultSelected="F">
-                <RadioButton value="F" label="F"/>
-                <RadioButton value="M" label="M"/>
-              </RadioButtonGroup>
+              <RadioGroup defaultSelected="F">
+                <Radio value="F" label="F"/>
+                <Radio value="M" label="M"/>
+              </RadioGroup>
               <TextField
                 floatingLabelText="Teléfono"
                 hintText="Teléfono"
@@ -101,12 +163,12 @@ class FormaAsesor extends Component {
                 {... this.props.correoElectronico}
                 />
               <br/><br/>
-              <FlatButton
+              <Button variant="flat"
                 label="Cancelar"
                 secondary={true}
                 onClick={this.props.onCancel}
                 />
-              <FlatButton
+              <Button variant="flat"
                 type="submit"
                 label="Aceptar"
                 primary={true}
@@ -152,7 +214,7 @@ const campos = {
 ];*/
 
 class AgregarAsesor extends Component {
-    render() {
+    /*render() {
         return (
             <Dialog
               title="Agregar asesor"
@@ -160,11 +222,53 @@ class AgregarAsesor extends Component {
               open={this.props.open}
               autoScrollBodyContent={true}
               >
-              <FormaAsesor onCancel={this.props.requestClose} onSubmit={this.enviar} />
+              <FormaAgregarAsesor
+                onCancel={this.props.requestClose}
+                onSubmit={this.enviar}
+                />
+            </Dialog>
+        );
+        }*/
+
+    render() {
+        return (
+            <Drawer
+              anchor="left"
+              open={this.props.open}
+              >
+              <div
+                tabIndex={0}
+                role="button"
+                onClick={this.props.requestClose}
+                onKeyDown={this.props.requestClose}
+                >
+                <FormaAgregarAsesor
+                  onCancel={this.props.requestClose}
+                  onSubmit={this.enviar}
+                  />
+              </div>
+            </Drawer>
+        );
+    }
+    enviar = e => e.preventDefault();
+}
+
+class EditarAsesor extends Component {
+    render() {
+        return (
+            <Dialog
+              title="Editar asesor"
+              modal={true}
+              open={this.props.open}
+              autoScrollBodyContent={true}
+              >
+              <FormaEditarAsesor
+                onCancel={this.props.requestClose}
+                onSubmit={this.enviar}
+                />
             </Dialog>
         );
     }
-
     enviar = e => e.preventDefault();
 }
 
@@ -174,6 +278,9 @@ class Asesores extends Component {
         this.state = {
             campos: campos,
             asesores: [],
+            paginacion: 1,
+            pagina: 1,
+            total: 1,
             agregar: false,
             editar: false
         };
@@ -192,22 +299,22 @@ class Asesores extends Component {
                     fixedHeader={false}
                     style={{ width: "100%", tableLayout: "auto" }}
                     >
-                    <TableHeader
+                    <TableHead
                       displaySelectAll={true}
                       adjustForCheckbox={true}
                       enableSelectAll={true}
                       >
                       <TableRow>
-                        <TableHeaderColumn>
+                        <TableCell>
                           <h1> Asesores </h1>
-                        </TableHeaderColumn>
+                        </TableCell>
                       </TableRow>
                       <TableRow>
                         {Object.keys(this.state.campos).map(llave => this.state.campos[llave]).map(titulo => (
-                            <TableHeaderColumn>{titulo}</TableHeaderColumn>
+                            <TableCell>{titulo}</TableCell>
                         ))}
             </TableRow>
-                </TableHeader>
+                </TableHead>
                 <TableBody
             displayRowCheckbox={true}
             deselectOnClickaway={false}
@@ -216,7 +323,7 @@ class Asesores extends Component {
                 {this.state.asesores.map(entrada => (
                     <TableRow>
                       {Object.keys(entrada).map(llave => (
-                          <TableRowColumn>{entrada[llave]}</TableRowColumn>
+                          <TableCell>{entrada[llave]}</TableCell>
                       ))}
                     </TableRow>
                 ))}
@@ -224,27 +331,30 @@ class Asesores extends Component {
                 </Table>
                 </Paper>
                 <div style={estilos.contenedorAcciones}>
-                <FloatingActionButton
+                <Button
+            variant="fab"
             style={estilos.acciones}
             onClick={this.abrirAgregar}
             secondary={true}
                 >
-                <ActionDelete />
-                </FloatingActionButton>
-                <FloatingActionButton
+                <DeleteIcon />
+                </Button>
+                <Button
+            variant="fab"
             style={estilos.acciones}
-            onClick={this.abrirAgregar}
+            onClick={this.abrirEditar}
             secondary={true}
                 >
-                <ImageEdit />
-                </FloatingActionButton>
-                <FloatingActionButton
+                <Icon>edit_icon</Icon>
+                </Button>
+                <Button
+            variant="fab"
             style={estilos.acciones}
             onClick={this.abrirAgregar}
             primary={true}
                 >
-                <ContentAdd/>
-                </FloatingActionButton>
+                <AddIcon/>
+                </Button>
                 </div>
                 <AgregarAsesor
             open={this.state.agregar}
@@ -254,6 +364,46 @@ class Asesores extends Component {
                 </ComprobanteSesion>
         );
     }
+
+    manejarPaginacion = (e, pagina) => {
+        pagina = Math.floor(pagina / this.state.paginacion) + 1;
+        Sesion.tokenCrudo()
+            .then(token => httpGet(
+                "http://localhost:3002/asesor/" +
+                    "?pagina=" + pagina +
+                    "&token=" + token,
+                {}))
+            .then(JSON.parse)
+            .then(json => {
+                this.setState({
+                    asesores: json.asesores,
+                    paginacion: json.paginacion,
+                    pagina: json.pagina,
+                    total: json.total
+                });
+            })
+            .catch(error => {
+                console.log(error);
+                this.setState({
+                    asesores: [],
+                    paginacion: 1,
+                    pagina: 0,
+                    total: 1
+                });
+            });
+    };
+
+    abrirEditar = e => {
+        this.setState({
+            editar: true
+        });
+    };
+
+    cerrarEditar = e => {
+        this.setState({
+            editar: true
+        });
+    };
 
     abrirAgregar = e => {
         this.setState({
@@ -275,17 +425,27 @@ class Asesores extends Component {
 
     cargar() {
         Sesion.tokenCrudo()
-            .then(token => httpGet("http://localhost:3002/asesor/?pagina=1&token=" + token, {}))
+            .then(token => httpGet(
+                "http://localhost:3002/asesor/" +
+                    "?pagina=" + this.state.pagina +
+                    "&token=" + token,
+                {}))
             .then(JSON.parse)
             .then(json => {
                 this.setState({
-                    asesores: json
+                    asesores: json.asesores,
+                    paginacion: json.paginacion,
+                    pagina: json.pagina,
+                    total: json.total
                 });
             })
             .catch(error => {
                 console.log(error);
                 this.setState({
-                    asesores: []
+                    asesores: [],
+                    paginacion: 1,
+                    pagina: 0,
+                    total: 1
                 });
             });
     }

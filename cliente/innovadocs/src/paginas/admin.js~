@@ -1,0 +1,15 @@
+import React, { Component } from "react";
+import Sesion from "../servicios/sesion";
+
+Sesion.iniciar(1, "ITT")
+    .then(console.log);
+
+function Admin() {
+    return (
+        <div>
+          ok
+        </div>
+    );
+}
+
+export default Admin;

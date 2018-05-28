@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-import { RefreshIndicator } from 'material-ui';
+import { CircularProgress } from "@material-ui/core";
 import Sesion from "./sesion";
 
 const estilos = {
@@ -43,12 +43,8 @@ class ComprobanteSesion extends Component {
         if (this.state.sesion == Sesion.Carga) {
             return (
                 <div style={estilos.contenedor}>
-                  <RefreshIndicator
+                  <CircularProgress
                     size={300}
-                    left={-150}
-                    top={-150}
-                    status="loading"
-                    style={estilos.refresh}
                     />
                 </div>
             );

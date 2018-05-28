@@ -1,0 +1,8 @@
+import { httpGet, httpPost } from '../xmlhttp.js';
+
+class Asesor {
+
+    buscarTodos() {
+        return 
+    }
+}

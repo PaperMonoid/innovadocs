@@ -1,0 +1,8 @@
+const peek = f => x => {
+    f(x);
+    return x;
+};
+
+export {
+    peek
+}
